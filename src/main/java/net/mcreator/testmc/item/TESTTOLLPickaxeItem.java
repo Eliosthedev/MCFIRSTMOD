@@ -1,6 +1,9 @@
 
 package net.mcreator.testmc.item;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
@@ -12,11 +15,11 @@ public class TESTTOLLPickaxeItem extends PickaxeItem {
 	public TESTTOLLPickaxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 250;
+				return 500;
 			}
 
 			public float getSpeed() {
-				return 6f;
+				return 10f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -34,6 +37,12 @@ public class TESTTOLLPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(Items.NETHERITE_PICKAXE));
 			}
-		}, 1, -3f, new Item.Properties());
+		}, 1, -3f, new Item.Properties().fireResistant());
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
 }
