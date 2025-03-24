@@ -16,21 +16,21 @@
       "value": "TOOLS"
     },
     "harvestLevel": 2,
-    "efficiency": 6.0,
+    "efficiency": 10.0,
     "attackSpeed": 1.0,
     "enchantability": 14,
     "damageVsEntity": 4.0,
-    "usageCount": 250,
+    "usageCount": 500,
     "blocksAffected": [],
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": true
     },
     "repairItems": [
       {
         "value": "Items.NETHERITE_PICKAXE"
       }
     ],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }
