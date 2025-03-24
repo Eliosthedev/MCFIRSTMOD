@@ -185,8 +185,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/testmc/network/MenuMusicButtonMessage.java",
-          "src/main/java/net/mcreator/testmc/client/gui/MenuMusicScreen.java",
-          "src/main/java/net/mcreator/testmc/world/inventory/MenuMusicMenu.java"
+          "src/main/java/net/mcreator/testmc/world/inventory/MenuMusicMenu.java",
+          "src/main/java/net/mcreator/testmc/client/gui/MenuMusicScreen.java"
         ]
       }
     },
