@@ -1,10 +1,21 @@
 {
   "mod_elements": [],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "testsong1",
+      "files": [
+        "testsong1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "subtitles.testsong1": ""
+    }
   },
   "foldersRoot": {
     "name": "~",
