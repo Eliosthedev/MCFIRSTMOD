@@ -1,0 +1,9 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "6",
+    "keyBindingName": "Ouverture Menu Cultivation",
+    "keyBindingCategoryKey": "misc"
+  }
+}

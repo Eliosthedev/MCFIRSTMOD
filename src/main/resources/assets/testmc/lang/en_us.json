@@ -1,8 +1,10 @@
 {
+  "key.testmc.lancement_music": "Lancement Music",
   "subtitles.testsong1": "",
   "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
   "item.testmc.testtoll_axe": "TESTTOLL Axe",
   "item.testmc.testtoll_sword": "TESTTOLL Sword",
   "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+  "key.testmc.ouverture_menu_cultivation": "Ouverture Menu Cultivation",
   "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
 }

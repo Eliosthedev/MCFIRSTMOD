@@ -23,8 +23,8 @@
       "registry_name": "testtoll_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testmc/item/TESTTOLLAxeItem.java",
-          "src/main/resources/assets/testmc/models/item/testtoll_axe.json"
+          "src/main/resources/assets/testmc/models/item/testtoll_axe.json",
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLAxeItem.java"
         ]
       }
     },
@@ -37,8 +37,8 @@
       "registry_name": "testtoll_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/testmc/models/item/testtoll_sword.json",
-          "src/main/java/net/mcreator/testmc/item/TESTTOLLSwordItem.java"
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLSwordItem.java",
+          "src/main/resources/assets/testmc/models/item/testtoll_sword.json"
         ]
       }
     },
@@ -51,8 +51,8 @@
       "registry_name": "testtoll_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testmc/item/TESTTOLLShovelItem.java",
-          "src/main/resources/assets/testmc/models/item/testtoll_shovel.json"
+          "src/main/resources/assets/testmc/models/item/testtoll_shovel.json",
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLShovelItem.java"
         ]
       }
     },
@@ -65,8 +65,8 @@
       "registry_name": "testtoll_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testmc/item/TESTTOLLHoeItem.java",
-          "src/main/resources/assets/testmc/models/item/testtoll_hoe.json"
+          "src/main/resources/assets/testmc/models/item/testtoll_hoe.json",
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLHoeItem.java"
         ]
       }
     },
@@ -134,6 +134,60 @@
           "src/main/resources/data/testmc/recipes/testtoll_hoe_recipe.json"
         ]
       }
+    },
+    {
+      "name": "OuvertureMenuCultivation",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ouverture_menu_cultivation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/network/OuvertureMenuCultivationMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "MenuCultivation",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_cultivation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/world/inventory/MenuCultivationMenu.java",
+          "src/main/java/net/mcreator/testmc/client/gui/MenuCultivationScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "LancementMusic",
+      "type": "keybind",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lancement_music",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/network/LancementMusicMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "MenuMusic",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu_music",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/world/inventory/MenuMusicMenu.java",
+          "src/main/java/net/mcreator/testmc/client/gui/MenuMusicScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -150,11 +204,13 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
+      "key.testmc.lancement_music": "Lancement Music",
       "subtitles.testsong1": "",
       "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
       "item.testmc.testtoll_axe": "TESTTOLL Axe",
       "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+      "key.testmc.ouverture_menu_cultivation": "Ouverture Menu Cultivation",
       "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
     }
   },

@@ -1,0 +1,9 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Lancement Music",
+    "keyBindingCategoryKey": "misc"
+  }
+}
