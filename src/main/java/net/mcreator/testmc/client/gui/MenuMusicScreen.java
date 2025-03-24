@@ -46,6 +46,9 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("testmc:textures/screens/menu_music.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+
 		RenderSystem.disableBlend();
 	}
 

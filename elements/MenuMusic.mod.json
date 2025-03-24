@@ -9,7 +9,17 @@
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
-    "components": [],
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "menu_music.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37
+        }
+      }
+    ],
     "gridSettings": {
       "sx": 18,
       "sy": 18,
