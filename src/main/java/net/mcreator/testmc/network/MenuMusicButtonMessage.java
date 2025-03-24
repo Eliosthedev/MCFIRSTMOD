@@ -64,7 +64,7 @@ public class MenuMusicButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			PStartMusic1Procedure.execute();
+			PStartMusic1Procedure.execute(world, x, y, z);
 		}
 	}
 
