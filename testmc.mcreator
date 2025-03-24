@@ -188,6 +188,41 @@
           "src/main/java/net/mcreator/testmc/client/gui/MenuMusicScreen.java"
         ]
       }
+    },
+    {
+      "name": "PLancementMusic",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_lancement_music",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PLancementMusicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
