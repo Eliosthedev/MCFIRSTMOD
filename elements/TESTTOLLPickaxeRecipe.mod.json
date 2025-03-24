@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,36 +10,16 @@
     "cookingTime": 200,
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "Items.NETHERITE_PICKAXE"
-      },
-      {
-        "value": "Items.NETHERITE_PICKAXE"
-      },
-      {
-        "value": "Items.NETHERITE_PICKAXE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "Blocks.NETHERITE_BLOCK"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.NETHER_STAR"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.NETHERITE_PICKAXE"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:TESTTOLLPickaxe"
     },
     "name": "testtoll_pickaxe_recipe",
