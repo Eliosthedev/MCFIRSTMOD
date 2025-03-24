@@ -1,0 +1,10 @@
+{
+  "testsong1": {
+    "sounds": [
+      {
+        "name": "testmc:testsong1",
+        "stream": false
+      }
+    ]
+  }
+}
