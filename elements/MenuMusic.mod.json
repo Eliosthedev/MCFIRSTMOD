@@ -66,6 +66,15 @@
           "x": 189,
           "y": 67
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "menu_music.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 36
+        }
       }
     ],
     "gridSettings": {
