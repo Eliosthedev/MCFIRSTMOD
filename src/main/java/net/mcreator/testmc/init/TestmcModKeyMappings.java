@@ -15,10 +15,25 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.testmc.network.LancementMusicMessage;
+import net.mcreator.testmc.TestmcMod;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TestmcModKeyMappings {
 	public static final KeyMapping OUVERTURE_MENU_CULTIVATION = new KeyMapping("key.testmc.ouverture_menu_cultivation", GLFW.GLFW_KEY_6, "key.categories.misc");
-	public static final KeyMapping LANCEMENT_MUSIC = new KeyMapping("key.testmc.lancement_music", GLFW.GLFW_KEY_M, "key.categories.misc");
+	public static final KeyMapping LANCEMENT_MUSIC = new KeyMapping("key.testmc.lancement_music", GLFW.GLFW_KEY_M, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				TestmcMod.PACKET_HANDLER.sendToServer(new LancementMusicMessage(0, 0));
+				LancementMusicMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -31,6 +46,7 @@ public class TestmcModKeyMappings {
 		@SubscribeEvent
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
+				LANCEMENT_MUSIC.consumeClick();
 			}
 		}
 	}

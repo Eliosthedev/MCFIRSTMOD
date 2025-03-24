@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "M",
     "keyBindingName": "Lancement Music",
-    "keyBindingCategoryKey": "misc"
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PLancementMusic"
+    }
   }
 }
