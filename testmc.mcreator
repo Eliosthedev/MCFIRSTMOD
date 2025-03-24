@@ -223,6 +223,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "PStartMusic1",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_start_music_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PStartMusic1Procedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -240,6 +254,7 @@
   "language_map": {
     "en_us": {
       "key.testmc.lancement_music": "Lancement Music",
+      "gui.testmc.menu_music.button_music1": "Music1",
       "subtitles.testsong1": "",
       "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
       "item.testmc.testtoll_axe": "TESTTOLL Axe",

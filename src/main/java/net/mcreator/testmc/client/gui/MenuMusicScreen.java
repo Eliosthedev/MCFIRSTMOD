@@ -6,9 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.testmc.world.inventory.MenuMusicMenu;
+import net.mcreator.testmc.network.MenuMusicButtonMessage;
+import net.mcreator.testmc.TestmcMod;
 
 import java.util.HashMap;
 
@@ -19,6 +22,7 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_music1;
 
 	public MenuMusicScreen(MenuMusicMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -46,9 +50,6 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("testmc:textures/screens/menu_music.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -73,5 +74,13 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	@Override
 	public void init() {
 		super.init();
+		button_music1 = Button.builder(Component.translatable("gui.testmc.menu_music.button_music1"), e -> {
+			if (true) {
+				TestmcMod.PACKET_HANDLER.sendToServer(new MenuMusicButtonMessage(0, x, y, z));
+				MenuMusicButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 10, this.topPos + 13, 56, 20).build();
+		guistate.put("button:button_music1", button_music1);
+		this.addRenderableWidget(button_music1);
 	}
 }

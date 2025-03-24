@@ -11,12 +11,18 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
+        "type": "button",
         "data": {
-          "image": "menu_music.png",
-          "use1Xscale": false,
-          "x": 126,
-          "y": 37
+          "name": "button_music1",
+          "text": "Music1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PStartMusic1"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 136,
+          "y": 50
         }
       }
     ],
