@@ -22,7 +22,8 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_music1;
+	Button button_start_1;
+	Button button_start_2;
 
 	public MenuMusicScreen(MenuMusicMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -50,9 +51,6 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("testmc:textures/screens/menu_music.png"), this.leftPos + 1, this.topPos + 0, 0, 0, 176, 166, 176, 166);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -72,18 +70,24 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music1"), 13, 11, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music2"), 13, 34, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_music1 = Button.builder(Component.translatable("gui.testmc.menu_music.button_music1"), e -> {
+		button_start_1 = Button.builder(Component.translatable("gui.testmc.menu_music.button_start_1"), e -> {
 			if (true) {
 				TestmcMod.PACKET_HANDLER.sendToServer(new MenuMusicButtonMessage(0, x, y, z));
 				MenuMusicButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 10, this.topPos + 13, 56, 20).build();
-		guistate.put("button:button_music1", button_music1);
-		this.addRenderableWidget(button_music1);
+		}).bounds(this.leftPos + 63, this.topPos + 6, 61, 20).build();
+		guistate.put("button:button_start_1", button_start_1);
+		this.addRenderableWidget(button_start_1);
+		button_start_2 = Button.builder(Component.translatable("gui.testmc.menu_music.button_start_2"), e -> {
+		}).bounds(this.leftPos + 63, this.topPos + 30, 61, 20).build();
+		guistate.put("button:button_start_2", button_start_2);
+		this.addRenderableWidget(button_start_2);
 	}
 }

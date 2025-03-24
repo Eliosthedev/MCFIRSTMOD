@@ -11,27 +11,60 @@
     "doesPauseGame": false,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "name": "label_music1",
+          "text": {
+            "fixedValue": "Music1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 139,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_music2",
+          "text": {
+            "fixedValue": "Music2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 139,
+          "y": 71
+        }
+      },
+      {
         "type": "button",
         "data": {
-          "name": "button_music1",
-          "text": "Music1",
+          "name": "button_start_1",
+          "text": "Start_1",
           "isUndecorated": false,
           "onClick": {
             "name": "PStartMusic1"
           },
-          "width": 56,
+          "width": 61,
           "height": 20,
-          "x": 136,
-          "y": 50
+          "x": 189,
+          "y": 43
         }
       },
       {
-        "type": "image",
+        "type": "button",
         "data": {
-          "image": "menu_music.png",
-          "use1Xscale": false,
-          "x": 127,
-          "y": 37
+          "name": "button_start_2",
+          "text": "Start_2",
+          "isUndecorated": false,
+          "width": 61,
+          "height": 20,
+          "x": 189,
+          "y": 67
         }
       }
     ],
