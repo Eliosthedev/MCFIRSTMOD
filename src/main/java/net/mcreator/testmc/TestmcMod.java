@@ -17,7 +17,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.testmc.init.TestmcModTabs;
 import net.mcreator.testmc.init.TestmcModSounds;
+import net.mcreator.testmc.init.TestmcModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -39,6 +41,10 @@ public class TestmcMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		TestmcModSounds.REGISTRY.register(bus);
+
+		TestmcModItems.REGISTRY.register(bus);
+
+		TestmcModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

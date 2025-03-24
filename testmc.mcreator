@@ -1,5 +1,141 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "TESTTOLLPickaxe",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLPickaxeItem.java",
+          "src/main/resources/assets/testmc/models/item/testtoll_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLAxe",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLAxeItem.java",
+          "src/main/resources/assets/testmc/models/item/testtoll_axe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLSword",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/testmc/models/item/testtoll_sword.json",
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLShovel",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLShovelItem.java",
+          "src/main/resources/assets/testmc/models/item/testtoll_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLHoe",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/item/TESTTOLLHoeItem.java",
+          "src/main/resources/assets/testmc/models/item/testtoll_hoe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/recipes/testtoll_pickaxe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLAxeRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/recipes/testtoll_axe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLSwordRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/recipes/testtoll_sword_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLShovelRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/recipes/testtoll_shovel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TESTTOLLHoeRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testtoll_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/recipes/testtoll_hoe_recipe.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [
     {
@@ -14,7 +150,12 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
-      "subtitles.testsong1": ""
+      "subtitles.testsong1": "",
+      "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
+      "item.testmc.testtoll_axe": "TESTTOLL Axe",
+      "item.testmc.testtoll_sword": "TESTTOLL Sword",
+      "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+      "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
     }
   },
   "foldersRoot": {

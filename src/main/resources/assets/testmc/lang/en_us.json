@@ -1,3 +1,8 @@
 {
-  "subtitles.testsong1": ""
+  "subtitles.testsong1": "",
+  "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
+  "item.testmc.testtoll_axe": "TESTTOLL Axe",
+  "item.testmc.testtoll_sword": "TESTTOLL Sword",
+  "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+  "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
 }
