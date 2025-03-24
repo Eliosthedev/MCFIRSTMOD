@@ -20,7 +20,6 @@ import net.mcreator.testmc.TestmcMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class TestmcModKeyMappings {
-	public static final KeyMapping OUVERTURE_MENU_CULTIVATION = new KeyMapping("key.testmc.ouverture_menu_cultivation", GLFW.GLFW_KEY_6, "key.categories.misc");
 	public static final KeyMapping LANCEMENT_MUSIC = new KeyMapping("key.testmc.lancement_music", GLFW.GLFW_KEY_M, "key.categories.misc") {
 		private boolean isDownOld = false;
 
@@ -37,7 +36,6 @@ public class TestmcModKeyMappings {
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-		event.register(OUVERTURE_MENU_CULTIVATION);
 		event.register(LANCEMENT_MUSIC);
 	}
 

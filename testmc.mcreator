@@ -136,33 +136,6 @@
       }
     },
     {
-      "name": "OuvertureMenuCultivation",
-      "type": "keybind",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ouverture_menu_cultivation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/testmc/network/OuvertureMenuCultivationMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "MenuCultivation",
-      "type": "gui",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "menu_cultivation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/testmc/world/inventory/MenuCultivationMenu.java",
-          "src/main/java/net/mcreator/testmc/client/gui/MenuCultivationScreen.java"
-        ]
-      }
-    },
-    {
       "name": "LancementMusic",
       "type": "keybind",
       "sortid": 13,
@@ -257,7 +230,20 @@
       }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "etatMusic1",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "etatMusic2",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    }
+  ],
   "sound_elements": [
     {
       "name": "testsong1",
@@ -274,15 +260,14 @@
       "key.testmc.lancement_music": "Lancement Music",
       "gui.testmc.menu_music.label_music2": "Music2",
       "gui.testmc.menu_music.button_start_2": "Start_2",
-      "gui.testmc.menu_music.label_music1": "Music1",
       "gui.testmc.menu_music.button_start_1": "Start_1",
+      "gui.testmc.menu_music.label_music1": "Music1",
       "subtitles.testsong1": "",
-      "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+      "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "gui.testmc.menu_music.button_music1": "Music1",
       "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
       "item.testmc.testtoll_axe": "TESTTOLL Axe",
-      "key.testmc.ouverture_menu_cultivation": "Ouverture Menu Cultivation",
       "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
     }
   },
