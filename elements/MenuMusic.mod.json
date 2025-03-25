@@ -44,14 +44,14 @@
         "type": "button",
         "data": {
           "name": "button_start_1",
-          "text": "Start_1",
+          "text": "Start",
           "isUndecorated": false,
           "onClick": {
             "name": "PStartMusic1"
           },
           "width": 61,
           "height": 20,
-          "x": 189,
+          "x": 185,
           "y": 43
         }
       },
@@ -59,14 +59,14 @@
         "type": "button",
         "data": {
           "name": "button_start_2",
-          "text": "Start_2",
+          "text": "Start",
           "isUndecorated": false,
           "onClick": {
             "name": "PStartMusic2"
           },
           "width": 61,
           "height": 20,
-          "x": 189,
+          "x": 185,
           "y": 67
         }
       },
@@ -82,31 +82,31 @@
       {
         "type": "label",
         "data": {
-          "name": "label_lancer1",
+          "name": "label_etat_music_1",
           "text": {
-            "fixedValue": "Lancer1"
+            "fixedValue": "etat_music_1"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 256,
-          "y": 49
+          "x": 250,
+          "y": 48
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_lancer2",
+          "name": "label_etat_music_2",
           "text": {
-            "fixedValue": "Lancer2"
+            "fixedValue": "etat_music_2"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 255,
-          "y": 74
+          "x": 250,
+          "y": 72
         }
       }
     ],

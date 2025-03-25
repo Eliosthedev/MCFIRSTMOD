@@ -75,8 +75,8 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music1"), 13, 11, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music2"), 13, 34, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_lancer1"), 130, 12, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_lancer2"), 129, 37, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_etat_music_1"), 124, 11, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_etat_music_2"), 124, 35, -12829636, false);
 	}
 
 	@Override
@@ -87,7 +87,7 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 				TestmcMod.PACKET_HANDLER.sendToServer(new MenuMusicButtonMessage(0, x, y, z));
 				MenuMusicButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 63, this.topPos + 6, 61, 20).build();
+		}).bounds(this.leftPos + 59, this.topPos + 6, 61, 20).build();
 		guistate.put("button:button_start_1", button_start_1);
 		this.addRenderableWidget(button_start_1);
 		button_start_2 = Button.builder(Component.translatable("gui.testmc.menu_music.button_start_2"), e -> {
@@ -95,7 +95,7 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 				TestmcMod.PACKET_HANDLER.sendToServer(new MenuMusicButtonMessage(1, x, y, z));
 				MenuMusicButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 63, this.topPos + 30, 61, 20).build();
+		}).bounds(this.leftPos + 59, this.topPos + 30, 61, 20).build();
 		guistate.put("button:button_start_2", button_start_2);
 		this.addRenderableWidget(button_start_2);
 	}

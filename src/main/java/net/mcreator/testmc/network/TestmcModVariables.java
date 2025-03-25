@@ -69,6 +69,8 @@ public class TestmcModVariables {
 			if (!event.isWasDeath()) {
 				clone.etatMusic1 = original.etatMusic1;
 				clone.etatMusic2 = original.etatMusic2;
+				clone.etatMusic2Label = original.etatMusic2Label;
+				clone.etatMusic1Label = original.etatMusic1Label;
 			}
 		}
 	}
@@ -106,6 +108,8 @@ public class TestmcModVariables {
 	public static class PlayerVariables {
 		public boolean etatMusic1 = true;
 		public boolean etatMusic2 = true;
+		public String etatMusic2Label = "\"\"";
+		public String etatMusic1Label = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -116,6 +120,8 @@ public class TestmcModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("etatMusic1", etatMusic1);
 			nbt.putBoolean("etatMusic2", etatMusic2);
+			nbt.putString("etatMusic2Label", etatMusic2Label);
+			nbt.putString("etatMusic1Label", etatMusic1Label);
 			return nbt;
 		}
 
@@ -123,6 +129,8 @@ public class TestmcModVariables {
 			CompoundTag nbt = (CompoundTag) tag;
 			etatMusic1 = nbt.getBoolean("etatMusic1");
 			etatMusic2 = nbt.getBoolean("etatMusic2");
+			etatMusic2Label = nbt.getString("etatMusic2Label");
+			etatMusic1Label = nbt.getString("etatMusic1Label");
 		}
 	}
 
@@ -149,6 +157,8 @@ public class TestmcModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.etatMusic1 = message.data.etatMusic1;
 					variables.etatMusic2 = message.data.etatMusic2;
+					variables.etatMusic2Label = message.data.etatMusic2Label;
+					variables.etatMusic1Label = message.data.etatMusic1Label;
 				}
 			});
 			context.setPacketHandled(true);

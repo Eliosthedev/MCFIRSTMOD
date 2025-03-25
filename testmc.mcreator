@@ -298,6 +298,36 @@
           "src/main/java/net/mcreator/testmc/world/inventory/CraftadvancedinterfaceMenu.java"
         ]
       }
+    },
+    {
+      "name": "PReturnTextLabelMusic2MenuMusic",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_return_text_label_music_2_menu_music",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PReturnTextLabelMusic2MenuMusicProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PReturnTextLabelEtatMusic1MenuMusic",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_return_text_label_etat_music_1_menu_music",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PReturnTextLabelEtatMusic1MenuMusicProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -312,6 +342,18 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "true"
+    },
+    {
+      "name": "etatMusic2Label",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "etatMusic1Label",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
     }
   ],
   "sound_elements": [

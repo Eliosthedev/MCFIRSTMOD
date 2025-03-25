@@ -65,11 +65,11 @@ public class MenuMusicButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			PStartMusic1Procedure.execute(world, x, y, z, entity);
+			PStartMusic1Procedure.execute(world, x, y, z, entity, guistate);
 		}
 		if (buttonID == 1) {
 
-			PStartMusic2Procedure.execute(world, x, y, z, entity);
+			PStartMusic2Procedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 
