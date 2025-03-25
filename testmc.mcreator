@@ -295,6 +295,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "PReturnTextLabelMusic2MenuMusic",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_return_text_label_music_2_menu_music",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PReturnTextLabelMusic2MenuMusicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -340,9 +360,9 @@
       "gui.testmc.menu_music.label_music2": "Music2",
       "gui.testmc.menu_music.button_start_2": "Start",
       "gui.testmc.menu_music.label_lancer1": "Lancer1",
-      "gui.testmc.menu_music.label_lancer2": "Lancer2",
-      "gui.testmc.menu_music.label_music1": "Music1",
       "gui.testmc.menu_music.button_start_1": "Start",
+      "gui.testmc.menu_music.label_music1": "Music1",
+      "gui.testmc.menu_music.label_lancer2": "Lancer2",
       "subtitles.testsong1": "",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
       "item.testmc.testtoll_sword": "TESTTOLL Sword",
