@@ -39,7 +39,7 @@ public class PStartMusic2Procedure {
 				});
 			}
 		} else {
-			TestmcMod.queueServerWork(60, () -> {
+			TestmcMod.queueServerWork(40, () -> {
 				{
 					boolean _setval = true;
 					entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

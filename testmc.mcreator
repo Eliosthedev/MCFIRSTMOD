@@ -202,7 +202,7 @@
       "name": "PStartMusic1",
       "type": "procedure",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "p_start_music_1",
       "metadata": {
@@ -237,7 +237,7 @@
       "name": "PStartMusic2",
       "type": "procedure",
       "sortid": 17,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "p_start_music_2",
       "metadata": {
@@ -312,7 +312,7 @@
       "name": "CRAFTadvanced",
       "type": "block",
       "sortid": 18,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "craf_tadvanced",
       "metadata": {
@@ -329,7 +329,7 @@
       "name": "Craftadvancedinterface",
       "type": "gui",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "craftadvancedinterface",
       "metadata": {
@@ -357,13 +357,13 @@
       "name": "etatMusic1Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"\""
+      "value": "\"Lancer\""
     },
     {
       "name": "etatMusic2Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"\""
+      "value": "\"Lancer\""
     }
   ],
   "sound_elements": [
