@@ -453,7 +453,7 @@
       "name": "PGodmodEffect",
       "type": "procedure",
       "sortid": 26,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "p_godmod_effect",
       "metadata": {
@@ -464,10 +464,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }

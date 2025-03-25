@@ -14,7 +14,7 @@ public class PEGodmodMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		PGodmodEffectProcedure.execute(entity.level(), entity);
+		PGodmodEffectProcedure.execute(entity);
 	}
 
 	@Override
