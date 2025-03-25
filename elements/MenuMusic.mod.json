@@ -78,36 +78,6 @@
           "x": 126,
           "y": 36
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_lancer1",
-          "text": {
-            "fixedValue": "Lancer1"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 256,
-          "y": 49
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_lancer2",
-          "text": {
-            "fixedValue": "Lancer2"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 255,
-          "y": 74
-        }
       }
     ],
     "gridSettings": {

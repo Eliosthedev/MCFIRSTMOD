@@ -69,7 +69,7 @@ public class MenuMusicButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			PStartMusic2Procedure.execute(world, x, y, z, entity);
+			PStartMusic2Procedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

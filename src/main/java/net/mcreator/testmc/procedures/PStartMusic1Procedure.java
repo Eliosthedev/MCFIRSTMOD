@@ -34,6 +34,8 @@ public class PStartMusic1Procedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			if (guistate.get("text:button_start_1") instanceof EditBox _tf)
+				_tf.setValue("En cours");
 		} else {
 			TestmcMod.queueServerWork(1600, () -> {
 				{
@@ -43,8 +45,8 @@ public class PStartMusic1Procedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if (guistate.get("text:label_lancer1") instanceof EditBox _tf)
-					_tf.setValue("Text");
+				if (guistate.get("text:button_start_1") instanceof EditBox _tf)
+					_tf.setValue("Start");
 			});
 		}
 	}
