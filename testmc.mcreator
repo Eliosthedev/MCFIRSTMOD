@@ -232,6 +232,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "PStartMusic2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_start_music_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PStartMusic2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -264,11 +298,11 @@
       "key.testmc.lancement_music": "Lancement Music",
       "gui.testmc.menu_music.label_music2": "Music2",
       "gui.testmc.menu_music.button_start_2": "Start_2",
-      "gui.testmc.menu_music.label_music1": "Music1",
       "gui.testmc.menu_music.button_start_1": "Start_1",
+      "gui.testmc.menu_music.label_music1": "Music1",
       "subtitles.testsong1": "",
-      "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
+      "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "gui.testmc.menu_music.button_music1": "Music1",
       "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
       "item.testmc.testtoll_axe": "TESTTOLL Axe",
