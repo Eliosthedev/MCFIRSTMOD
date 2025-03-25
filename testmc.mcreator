@@ -215,10 +215,6 @@
             "type": "entity"
           },
           {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -252,10 +248,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
           },
           {
             "name": "x",
@@ -334,13 +326,13 @@
       "name": "etatMusic1Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"\""
+      "value": "\"Lancer\""
     },
     {
       "name": "etatMusic2Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"\""
+      "value": "\"Lancer\""
     }
   ],
   "sound_elements": [
@@ -360,9 +352,9 @@
       "gui.testmc.menu_music.label_music2": "Music2",
       "gui.testmc.menu_music.button_start_2": "Start",
       "gui.testmc.menu_music.label_lancer1": "Lancer1",
-      "gui.testmc.menu_music.button_start_1": "Start",
-      "gui.testmc.menu_music.label_music1": "Music1",
       "gui.testmc.menu_music.label_lancer2": "Lancer2",
+      "gui.testmc.menu_music.label_music1": "Music1",
+      "gui.testmc.menu_music.button_start_1": "Start",
       "subtitles.testsong1": "",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
       "item.testmc.testtoll_sword": "TESTTOLL Sword",

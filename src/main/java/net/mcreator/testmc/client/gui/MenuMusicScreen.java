@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.testmc.world.inventory.MenuMusicMenu;
+import net.mcreator.testmc.procedures.PReturnTextLabelMusic2MenuMusicProcedure;
+import net.mcreator.testmc.procedures.PReturnTextLabelEtatMusic1MenuMusicProcedure;
 import net.mcreator.testmc.network.MenuMusicButtonMessage;
 import net.mcreator.testmc.TestmcMod;
 
@@ -75,8 +77,12 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music1"), 13, 11, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music2"), 13, 34, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_etat_music_1"), 124, 11, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_etat_music_2"), 124, 35, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				PReturnTextLabelEtatMusic1MenuMusicProcedure.execute(entity), 124, 11, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				PReturnTextLabelMusic2MenuMusicProcedure.execute(entity), 124, 35, -12829636, false);
 	}
 
 	@Override

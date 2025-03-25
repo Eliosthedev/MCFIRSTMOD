@@ -84,7 +84,8 @@
         "data": {
           "name": "label_etat_music_1",
           "text": {
-            "fixedValue": "etat_music_1"
+            "fixedValue": "etat_music_1",
+            "name": "PReturnTextLabelEtatMusic1MenuMusic"
           },
           "color": {
             "value": -12829636,
@@ -99,7 +100,8 @@
         "data": {
           "name": "label_etat_music_2",
           "text": {
-            "fixedValue": "etat_music_2"
+            "fixedValue": "etat_music_2",
+            "name": "PReturnTextLabelMusic2MenuMusic"
           },
           "color": {
             "value": -12829636,
