@@ -75,6 +75,8 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music1"), 13, 11, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_music2"), 13, 34, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_lancer1"), 130, 12, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.testmc.menu_music.label_lancer2"), 129, 37, -12829636, false);
 	}
 
 	@Override
