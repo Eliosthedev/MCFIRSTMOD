@@ -23,20 +23,8 @@ public class PGodmodEffectProcedure {
 			_entity.setHealth(20);
 		entity.setInvisible(true);
 		entity.setMaxUpStep(1);
-		entity.setCustomName(Component.literal(("God " + entity)));
+		entity.setCustomName(Component.literal("God "));
 		entity.fallDistance = 0;
-		if (entity instanceof Player _player) {
-			_player.getAbilities().invulnerable = true;
-			_player.onUpdateAbilities();
-		}
-		if (entity instanceof Player _player) {
-			_player.getAbilities().mayfly = true;
-			_player.onUpdateAbilities();
-		}
-		if (entity instanceof Player _player) {
-			_player.getAbilities().flying = true;
-			_player.onUpdateAbilities();
-		}
 		if (entity instanceof ServerPlayer _player) {
 			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("testmc:h_godmod"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -47,8 +35,6 @@ public class PGodmodEffectProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.giveExperienceLevels(1e+32);
-		if (entity instanceof Player _player)
-			_player.getFoodData().setFoodLevel(20);
 		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("testmc:dt_godmod")))), 1);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2, 5, false, false));
