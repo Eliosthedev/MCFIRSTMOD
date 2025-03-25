@@ -453,7 +453,7 @@
       "name": "PGodmodEffect",
       "type": "procedure",
       "sortid": 26,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "p_godmod_effect",
       "metadata": {
