@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.01,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s as ascended",
+    "itemDeathMessage": "%1$s as ascended with the help of %2$s using %3$s",
+    "playerDeathMessage": "%1$s as ascended to escape %2$s"
+  }
+}

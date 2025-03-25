@@ -16,6 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.testmc.network.LancementMusicMessage;
+import net.mcreator.testmc.network.KLancementGodmodMessage;
 import net.mcreator.testmc.TestmcMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -33,7 +34,19 @@ public class TestmcModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping K_LANCEMENT_GODMOD = new KeyMapping("key.testmc.k_lancement_godmod", GLFW.GLFW_KEY_G, "key.categories.misc");
+	public static final KeyMapping K_LANCEMENT_GODMOD = new KeyMapping("key.testmc.k_lancement_godmod", GLFW.GLFW_KEY_G, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				TestmcMod.PACKET_HANDLER.sendToServer(new KLancementGodmodMessage(0, 0));
+				KLancementGodmodMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -47,6 +60,7 @@ public class TestmcModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				LANCEMENT_MUSIC.consumeClick();
+				K_LANCEMENT_GODMOD.consumeClick();
 			}
 		}
 	}

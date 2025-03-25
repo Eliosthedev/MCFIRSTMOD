@@ -8,12 +8,18 @@
   "gui.testmc.menu_music.label_music1": "Music1",
   "gui.testmc.menu_music.label_lancer2": "Lancer2",
   "block.testmc.craf_tadvanced": "CRAF Tadvanced",
+  "advancements.h_godmod.title": "To Godhood",
   "gui.testmc.craftadvancedinterface.label_advanced_crafting_table": "Advanced crafting table",
   "subtitles.testsong1": "",
+  "advancements.h_godmod.descr": "You have become a god",
   "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
   "item.testmc.testtoll_sword": "TESTTOLL Sword",
+  "death.attack.dt_godmod.item": "%1$s as ascended with the help of %2$s using %3$s",
   "gui.testmc.menu_music.button_music1": "Music1",
+  "death.attack.dt_godmod": "%1$s as ascended",
+  "effect.testmc.pe_godmod": "Godmod",
   "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
+  "death.attack.dt_godmod.player": "%1$s as ascended to escape %2$s",
   "item.testmc.testtoll_axe": "TESTTOLL Axe",
   "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
 }

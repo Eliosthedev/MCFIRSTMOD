@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "G",
     "keyBindingName": "K Lancement Godmod",
-    "keyBindingCategoryKey": "misc"
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PAppelGodmod"
+    }
   }
 }

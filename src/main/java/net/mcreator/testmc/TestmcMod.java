@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.testmc.init.TestmcModTabs;
 import net.mcreator.testmc.init.TestmcModSounds;
+import net.mcreator.testmc.init.TestmcModMobEffects;
 import net.mcreator.testmc.init.TestmcModMenus;
 import net.mcreator.testmc.init.TestmcModItems;
 import net.mcreator.testmc.init.TestmcModBlocks;
@@ -48,6 +49,8 @@ public class TestmcMod {
 		TestmcModItems.REGISTRY.register(bus);
 
 		TestmcModTabs.REGISTRY.register(bus);
+
+		TestmcModMobEffects.REGISTRY.register(bus);
 
 		TestmcModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init

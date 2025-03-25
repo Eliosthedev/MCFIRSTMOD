@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:jigsaw"
+    },
+    "title": {
+      "translate": "advancements.h_godmod.title"
+    },
+    "description": {
+      "translate": "advancements.h_godmod.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "h_godmod_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
