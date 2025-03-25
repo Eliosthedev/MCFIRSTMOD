@@ -32,22 +32,15 @@ public class PStartMusic2Procedure {
 				});
 			}
 		} else {
-			TestmcMod.queueServerWork(40, () -> {
+			TestmcMod.queueServerWork(60, () -> {
 				{
-					boolean _setval = false;
+					boolean _setval = true;
 					entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.etatMusic2 = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			});
-			{
-				boolean _setval = true;
-				entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.etatMusic2 = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 		}
 	}
 }

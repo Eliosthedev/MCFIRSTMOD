@@ -14,6 +14,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.testmc.world.inventory.MenuMusicMenu;
+import net.mcreator.testmc.network.TestmcModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -34,6 +35,20 @@ public class PLancementMusicProcedure {
 					return new MenuMusicMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
+		}
+		{
+			boolean _setval = true;
+			entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.etatMusic1 = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			boolean _setval = true;
+			entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.etatMusic2 = _setval;
+				capability.syncPlayerVariables(entity);
+			});
 		}
 	}
 }
