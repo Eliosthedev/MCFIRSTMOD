@@ -284,10 +284,16 @@
       "locked_code": false,
       "registry_name": "p_return_text_label_etat_music_1_menu_music",
       "metadata": {
+        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/testmc/procedures/PReturnTextLabelEtatMusic1MenuMusicProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     }
   ],
