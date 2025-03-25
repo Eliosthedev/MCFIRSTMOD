@@ -31,26 +31,12 @@ public class PStartMusic2Procedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			{
-				String _setval = "En cours";
-				entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.etatMusic2Label = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 		} else {
 			TestmcMod.queueServerWork(40, () -> {
 				{
 					boolean _setval = true;
 					entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.etatMusic2 = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-				{
-					String _setval = "Lancer";
-					entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.etatMusic2Label = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}

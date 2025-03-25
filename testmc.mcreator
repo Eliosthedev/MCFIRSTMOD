@@ -338,6 +338,44 @@
           "src/main/java/net/mcreator/testmc/world/inventory/CraftadvancedinterfaceMenu.java"
         ]
       }
+    },
+    {
+      "name": "PAffichageEtatMusic2",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_affichage_etat_music_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PAffichageEtatMusic2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PAffichageEtatMusic1",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_affichage_etat_music_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/procedures/PAffichageEtatMusic1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
