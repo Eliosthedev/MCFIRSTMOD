@@ -108,8 +108,8 @@ public class TestmcModVariables {
 	public static class PlayerVariables {
 		public boolean etatMusic1 = true;
 		public boolean etatMusic2 = true;
-		public String etatMusic1Label = "\"Lancer\"";
-		public String etatMusic2Label = "\"Lancer\"";
+		public String etatMusic1Label = "\"\"";
+		public String etatMusic2Label = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)

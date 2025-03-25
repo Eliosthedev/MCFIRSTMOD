@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.testmc.client.gui.MenuMusicScreen;
+import net.mcreator.testmc.client.gui.CraftadvancedinterfaceScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class TestmcModScreens {
@@ -19,6 +20,7 @@ public class TestmcModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(TestmcModMenus.MENU_MUSIC.get(), MenuMusicScreen::new);
+			MenuScreens.register(TestmcModMenus.CRAFTADVANCEDINTERFACE.get(), CraftadvancedinterfaceScreen::new);
 		});
 	}
 }

@@ -307,6 +307,37 @@
           }
         ]
       }
+    },
+    {
+      "name": "CRAFTadvanced",
+      "type": "block",
+      "sortid": 18,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "craf_tadvanced",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/testmc/loot_tables/blocks/craf_tadvanced.json",
+          "src/main/resources/assets/testmc/blockstates/craf_tadvanced.json",
+          "src/main/resources/assets/testmc/models/block/craf_tadvanced.json",
+          "src/main/java/net/mcreator/testmc/block/CRAFTadvancedBlock.java",
+          "src/main/resources/assets/testmc/models/item/craf_tadvanced.json"
+        ]
+      }
+    },
+    {
+      "name": "Craftadvancedinterface",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "craftadvancedinterface",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testmc/client/gui/CraftadvancedinterfaceScreen.java",
+          "src/main/java/net/mcreator/testmc/world/inventory/CraftadvancedinterfaceMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -326,13 +357,13 @@
       "name": "etatMusic1Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"Lancer\""
+      "value": "\"\""
     },
     {
       "name": "etatMusic2Label",
       "type": "string",
       "scope": "player_lifetime",
-      "value": "\"Lancer\""
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -359,8 +390,6 @@
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
       "item.testmc.testtoll_sword": "TESTTOLL Sword",
       "gui.testmc.menu_music.button_music1": "Music1",
-      "gui.testmc.menu_music.label_etat_music_1": "etat_music_1",
-      "gui.testmc.menu_music.label_etat_music_2": "etat_music_2",
       "item.testmc.testtoll_shovel": "TESTTOLL Shovel",
       "item.testmc.testtoll_axe": "TESTTOLL Axe",
       "item.testmc.testtoll_pickaxe": "TESTTOLL Pickaxe"
