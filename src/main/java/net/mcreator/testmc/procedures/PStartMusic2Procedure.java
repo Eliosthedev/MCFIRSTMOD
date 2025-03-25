@@ -10,7 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.testmc.network.TestmcModVariables;
-import net.mcreator.testmc.TestmcMod;
 
 public class PStartMusic2Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -31,16 +30,6 @@ public class PStartMusic2Procedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else {
-			TestmcMod.queueServerWork(40, () -> {
-				{
-					boolean _setval = true;
-					entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.etatMusic2 = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-			});
 		}
 	}
 }
