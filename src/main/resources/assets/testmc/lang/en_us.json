@@ -6,6 +6,8 @@
   "gui.testmc.menu_music.button_start_1": "Start",
   "gui.testmc.menu_music.label_music1": "Music1",
   "gui.testmc.menu_music.label_lancer2": "Lancer2",
+  "block.testmc.craf_tadvanced": "CRAF Tadvanced",
+  "gui.testmc.craftadvancedinterface.label_advanced_crafting_table": "Advanced crafting table",
   "subtitles.testsong1": "",
   "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
   "item.testmc.testtoll_sword": "TESTTOLL Sword",

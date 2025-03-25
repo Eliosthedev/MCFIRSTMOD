@@ -317,11 +317,11 @@
       "registry_name": "craf_tadvanced",
       "metadata": {
         "files": [
-          "src/main/resources/data/testmc/loot_tables/blocks/craf_tadvanced.json",
           "src/main/resources/assets/testmc/blockstates/craf_tadvanced.json",
+          "src/main/resources/data/testmc/loot_tables/blocks/craf_tadvanced.json",
+          "src/main/resources/assets/testmc/models/item/craf_tadvanced.json",
           "src/main/resources/assets/testmc/models/block/craf_tadvanced.json",
-          "src/main/java/net/mcreator/testmc/block/CRAFTadvancedBlock.java",
-          "src/main/resources/assets/testmc/models/item/craf_tadvanced.json"
+          "src/main/java/net/mcreator/testmc/block/CRAFTadvancedBlock.java"
         ]
       }
     },
@@ -383,9 +383,11 @@
       "gui.testmc.menu_music.label_music2": "Music2",
       "gui.testmc.menu_music.button_start_2": "Start",
       "gui.testmc.menu_music.label_lancer1": "Lancer1",
-      "gui.testmc.menu_music.label_lancer2": "Lancer2",
-      "gui.testmc.menu_music.label_music1": "Music1",
       "gui.testmc.menu_music.button_start_1": "Start",
+      "gui.testmc.menu_music.label_music1": "Music1",
+      "gui.testmc.menu_music.label_lancer2": "Lancer2",
+      "block.testmc.craf_tadvanced": "CRAF Tadvanced",
+      "gui.testmc.craftadvancedinterface.label_advanced_crafting_table": "Advanced crafting table",
       "subtitles.testsong1": "",
       "item.testmc.testtoll_hoe": "TESTTOLL Hoe",
       "item.testmc.testtoll_sword": "TESTTOLL Sword",
