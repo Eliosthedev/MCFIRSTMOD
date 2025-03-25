@@ -8,13 +8,16 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.gui.components.EditBox;
 
 import net.mcreator.testmc.network.TestmcModVariables;
 import net.mcreator.testmc.TestmcMod;
 
+import java.util.HashMap;
+
 public class PStartMusic1Procedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, HashMap guistate) {
+		if (entity == null || guistate == null)
 			return;
 		if ((entity.getCapability(TestmcModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TestmcModVariables.PlayerVariables())).etatMusic1) {
 			if (world instanceof Level _level) {
@@ -40,6 +43,8 @@ public class PStartMusic1Procedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				if (guistate.get("text:label_lancer1") instanceof EditBox _tf)
+					_tf.setValue("Text");
 			});
 		}
 	}
