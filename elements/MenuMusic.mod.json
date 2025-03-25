@@ -61,6 +61,9 @@
           "name": "button_start_2",
           "text": "Start_2",
           "isUndecorated": false,
+          "onClick": {
+            "name": "PStartMusic2"
+          },
           "width": 61,
           "height": 20,
           "x": 189,

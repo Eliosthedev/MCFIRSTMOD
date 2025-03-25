@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.testmc.world.inventory.MenuMusicMenu;
+import net.mcreator.testmc.procedures.PStartMusic2Procedure;
 import net.mcreator.testmc.procedures.PStartMusic1Procedure;
 import net.mcreator.testmc.TestmcMod;
 
@@ -65,6 +66,10 @@ public class MenuMusicButtonMessage {
 		if (buttonID == 0) {
 
 			PStartMusic1Procedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 1) {
+
+			PStartMusic2Procedure.execute(world, x, y, z, entity);
 		}
 	}
 

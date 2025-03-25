@@ -89,6 +89,10 @@ public class MenuMusicScreen extends AbstractContainerScreen<MenuMusicMenu> {
 		guistate.put("button:button_start_1", button_start_1);
 		this.addRenderableWidget(button_start_1);
 		button_start_2 = Button.builder(Component.translatable("gui.testmc.menu_music.button_start_2"), e -> {
+			if (true) {
+				TestmcMod.PACKET_HANDLER.sendToServer(new MenuMusicButtonMessage(1, x, y, z));
+				MenuMusicButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + 63, this.topPos + 30, 61, 20).build();
 		guistate.put("button:button_start_2", button_start_2);
 		this.addRenderableWidget(button_start_2);
