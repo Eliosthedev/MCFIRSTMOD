@@ -33,10 +33,12 @@ public class TestmcModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping K_LANCEMENT_GODMOD = new KeyMapping("key.testmc.k_lancement_godmod", GLFW.GLFW_KEY_G, "key.categories.misc");
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(LANCEMENT_MUSIC);
+		event.register(K_LANCEMENT_GODMOD);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})

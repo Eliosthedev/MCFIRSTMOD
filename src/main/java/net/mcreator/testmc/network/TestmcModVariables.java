@@ -71,6 +71,7 @@ public class TestmcModVariables {
 				clone.etatMusic2 = original.etatMusic2;
 				clone.etatMusic1Label = original.etatMusic1Label;
 				clone.etatMusic2Label = original.etatMusic2Label;
+				clone.etatGodmod = original.etatGodmod;
 			}
 		}
 	}
@@ -110,6 +111,7 @@ public class TestmcModVariables {
 		public boolean etatMusic2 = true;
 		public String etatMusic1Label = "\"Lancer\"";
 		public String etatMusic2Label = "\"Lancer\"";
+		public boolean etatGodmod = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -122,6 +124,7 @@ public class TestmcModVariables {
 			nbt.putBoolean("etatMusic2", etatMusic2);
 			nbt.putString("etatMusic1Label", etatMusic1Label);
 			nbt.putString("etatMusic2Label", etatMusic2Label);
+			nbt.putBoolean("etatGodmod", etatGodmod);
 			return nbt;
 		}
 
@@ -131,6 +134,7 @@ public class TestmcModVariables {
 			etatMusic2 = nbt.getBoolean("etatMusic2");
 			etatMusic1Label = nbt.getString("etatMusic1Label");
 			etatMusic2Label = nbt.getString("etatMusic2Label");
+			etatGodmod = nbt.getBoolean("etatGodmod");
 		}
 	}
 
@@ -159,6 +163,7 @@ public class TestmcModVariables {
 					variables.etatMusic2 = message.data.etatMusic2;
 					variables.etatMusic1Label = message.data.etatMusic1Label;
 					variables.etatMusic2Label = message.data.etatMusic2Label;
+					variables.etatGodmod = message.data.etatGodmod;
 				}
 			});
 			context.setPacketHandled(true);
