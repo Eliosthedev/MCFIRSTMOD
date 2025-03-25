@@ -21,6 +21,7 @@ import net.mcreator.testmc.init.TestmcModTabs;
 import net.mcreator.testmc.init.TestmcModSounds;
 import net.mcreator.testmc.init.TestmcModMenus;
 import net.mcreator.testmc.init.TestmcModItems;
+import net.mcreator.testmc.init.TestmcModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,6 +43,7 @@ public class TestmcMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		TestmcModSounds.REGISTRY.register(bus);
+		TestmcModBlocks.REGISTRY.register(bus);
 
 		TestmcModItems.REGISTRY.register(bus);
 

@@ -8,7 +8,9 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.testmc.item.TESTTOLLSwordItem;
 import net.mcreator.testmc.item.TESTTOLLShovelItem;
@@ -24,6 +26,11 @@ public class TestmcModItems {
 	public static final RegistryObject<Item> TESTTOLL_SWORD = REGISTRY.register("testtoll_sword", () -> new TESTTOLLSwordItem());
 	public static final RegistryObject<Item> TESTTOLL_SHOVEL = REGISTRY.register("testtoll_shovel", () -> new TESTTOLLShovelItem());
 	public static final RegistryObject<Item> TESTTOLL_HOE = REGISTRY.register("testtoll_hoe", () -> new TESTTOLLHoeItem());
+	public static final RegistryObject<Item> CRAF_TADVANCED = block(TestmcModBlocks.CRAF_TADVANCED);
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }

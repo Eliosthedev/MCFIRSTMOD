@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "testmc:block/oak_planks",
+    "top": "testmc:block/crafting_table_cheat_top",
+    "side": "testmc:block/crafting_table_front",
+    "overlay": "testmc:block/crafting_table_side",
+    "particle": "testmc:block/oak_planks"
+  },
+  "render_type": "cutout_mipped"
+}

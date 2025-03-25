@@ -28,6 +28,8 @@ public class TestmcModTabs {
 			tabData.accept(TestmcModItems.TESTTOLL_PICKAXE.get());
 			tabData.accept(TestmcModItems.TESTTOLL_SHOVEL.get());
 			tabData.accept(TestmcModItems.TESTTOLL_HOE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(TestmcModBlocks.CRAF_TADVANCED.get().asItem());
 		}
 	}
 }
