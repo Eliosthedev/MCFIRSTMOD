@@ -19,12 +19,7 @@ public class PGodmodEffectProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
-			_entity.setHealth(20);
-		entity.setInvisible(true);
-		entity.setMaxUpStep(1);
 		entity.setCustomName(Component.literal("God "));
-		entity.fallDistance = 0;
 		if (entity instanceof ServerPlayer _player) {
 			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("testmc:h_godmod"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -53,7 +48,7 @@ public class PGodmodEffectProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 2, 5, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2, 5, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2, 50, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 2, 5, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
